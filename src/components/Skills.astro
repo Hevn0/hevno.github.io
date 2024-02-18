@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Adaptation</h2>
+		<p> Grace à l'aspect <strong>pluridisciplinaire</strong> de ma formation ainsi qu'à ma curiosité personnelle, j'acquéris en <strong>permanence</strong> des compétences dans différents domaines liés au digital. De plus, je suis toujours à la recherche de nouvelles méthodologies/workflows pour être le plus efficace possible</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Travail d'équipe</h2>
+		<p>Je me donne toujours à mon <strong>maximum</strong> pour les projets qui me motivent. J'ai eu l'occasion, de travailler sur des projets de groupes de différents scopes. Je suis habitué à cet environnement et sait en tirer le <strong>meilleur</strong>.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Rigueur</h2>
+		<p>Je me motive par la <strong>compréhension</strong> des outils que je manie. Je suis conscient de l'inportance d'exercer une <strong>méthodologie</strong> de travail <strong>régulière</strong> pour obtenir des résultats qui me satisferont et sait faire preuve de <strong>patience</strong> quant à celle-ci. </p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
